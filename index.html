@@ -26,9 +26,9 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPVS-hEVThEv2Yj4oTJfWIeNNdE3TZZoI&libraries=places&language=zh-TW"></script>
 
       <!--Parameter: &v=3&amp;sensor=false&libraries=geometry,places&ext=.js -->
-  <script type="text/javascript" src="https://google-maps-utility-library-v3.googlecode.com/svn/tags/markerwithlabel/1.1.8/src/markerwithlabel.js"></script>
+  <!--<script type="text/javascript" src="https://google-maps-utility-library-v3.googlecode.com/svn/tags/markerwithlabel/1.1.8/src/markerwithlabel.js"></script>-->
   <script type="text/javascript" src="./js/maplabel.js"></script>
- 
+  <script type="text/javascript" src="./js/markerwithlabel.js"></script>
   <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script> -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -556,7 +556,7 @@
 
 
     function placeMarkerAndPanTo(latLng, map) {
-      // marker.setMap(null);
+      marker.setMap(null);
       marker.setPosition(latLng);
       marker.setMap(map);
       toggleBounce();
