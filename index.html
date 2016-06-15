@@ -661,6 +661,7 @@
         event.preventDefault();
         $.getJSON("map.json", function(json) {
           for (var i in json.features) {
+            console.log(json.features[i].properties.buildingid)
             for (var j=0; j<json.features[i].properties.buildingid.length; j++) {
               if( blid == json.features[i].properties.buildingid[j]) {
                 var ct_lat = json.features[i].properties.centerlat;
