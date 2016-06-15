@@ -658,7 +658,6 @@
       var blid = getParameterByName('blid');
       console.log(blid);
       if (blid.length != 0){
-        event.preventDefault();
         $.getJSON("map.json", function(json) {
           for (var i in json.features) {
             console.log("outer for")
