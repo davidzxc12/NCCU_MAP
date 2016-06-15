@@ -656,14 +656,17 @@
     var main = function() {
 
       var blid = getParameterByName('blid');
-      // console.log(blid);
+      console.log(blid);
       if (blid.length != 0){
         event.preventDefault();
         $.getJSON("map.json", function(json) {
           for (var i in json.features) {
+            console.log("outer for")
             if(json.features[i].properties.buildingid!= undefined){
+              console.log("outer if");
               for (var j=0; j<json.features[i].properties.buildingid.length; j++) {
                 if( blid == json.features[i].properties.buildingid[j]) {
+                console.log("inner if");
                   var ct_lat = json.features[i].properties.centerlat;
                   var ct_lng = json.features[i].properties.centerlng;
                   var searchLatLng = {lat: ct_lat, lng: ct_lng};
