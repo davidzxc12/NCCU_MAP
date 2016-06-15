@@ -801,7 +801,10 @@
       //   $( this ).fadeIn( 500 );
       // });
     };
-    $(document).ready(main);
+    $(document).ready(function(){
+      initMap();
+      main();
+    });
     
   </script>
 </head>
