@@ -656,7 +656,26 @@
     var main = function() {
 
       var blid = getParameterByName('blid');
-      console.log(blid);
+      // console.log(blid);
+      if (blid.length != 0){
+        event.preventDefault();
+        $.getJSON("map.json", function(json) {
+          for (var i in json.features) {
+            for (var j=0; j<json.features[i].properties.buildingid.length; j++) {
+              if( blid == json.features[i].properties.buildingid[j]) {
+                var ct_lat = json.features[i].properties.centerlat;
+                var ct_lng = json.features[i].properties.centerlng;
+                var searchLatLng = {lat: ct_lat, lng: ct_lng};
+                
+                placeMarkerAndPanTo(searchLatLng, map);
+                break;
+              }
+            }
+          }
+        });
+      }
+
+
       $("#getLocation").click(function(){
         map.panTo(currentPositionMarker.getPosition());
         map.setZoom(18);
