@@ -661,15 +661,16 @@
         event.preventDefault();
         $.getJSON("map.json", function(json) {
           for (var i in json.features) {
-            console.log(json.features[i].properties.buildingid)
-            for (var j=0; j<json.features[i].properties.buildingid.length; j++) {
-              if( blid == json.features[i].properties.buildingid[j]) {
-                var ct_lat = json.features[i].properties.centerlat;
-                var ct_lng = json.features[i].properties.centerlng;
-                var searchLatLng = {lat: ct_lat, lng: ct_lng};
+            if(json.features[i].properties.buildingid!= undefined){
+              for (var j=0; j<json.features[i].properties.buildingid.length; j++) {
+                if( blid == json.features[i].properties.buildingid[j]) {
+                  var ct_lat = json.features[i].properties.centerlat;
+                  var ct_lng = json.features[i].properties.centerlng;
+                  var searchLatLng = {lat: ct_lat, lng: ct_lng};
                 
-                placeMarkerAndPanTo(searchLatLng, map);
-                break;
+                  placeMarkerAndPanTo(searchLatLng, map);
+                  break;
+                }
               }
             }
           }
