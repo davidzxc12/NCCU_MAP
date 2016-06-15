@@ -16,7 +16,8 @@
         "centerlng": 121.576428,
         "centerlat": 24.985869,
         "search": ["中正圖書館", "總圖"],
-        "ID": 1
+        "ID": 1,
+        "buildingid":["06"]
       },
       "geometry": {
         "type": "Polygon",
@@ -71,7 +72,8 @@
         "centerlng": 121.575093,
         "centerlat": 24.986147,
         "search": ["行大", "行政大樓", "校長室", "副校長室", "教學事務處", "教務處", "學生事務處", "學務處", "總務處", "研究發展處", "研究發展中心", "研發處", "國際合作事務處", "國合處", "秘書處", "人事室", "主計室", "教學發展中心", "性別平等教育委員會", "頂尖大學計畫辦公室"],
-        "ID": 3
+        "ID": 3,
+        "buildingid":["16"]
       },
       "geometry": {
         "type": "Polygon",
@@ -100,7 +102,8 @@
         "centerlng": 121.575911,
         "centerlat": 24.987380,
         "search": ["駐警隊", "警衛室"],
-        "ID": 4
+        "ID": 4,
+        "buildingid" : ["22"]
       },
       "geometry": {
         "type": "Polygon",
@@ -126,7 +129,8 @@
         "centerlng": 121.576118,
         "centerlat": 24.987339,
         "search": ["收發室"],
-        "ID": 5
+        "ID": 5,
+        "buildingid":["22"]
       },
       "geometry": {
         "type": "Polygon",
@@ -152,7 +156,8 @@
         "centerlng": 121.576489,
         "centerlat": 24.987679,
         "search": ["健康中心"],
-        "ID": 6
+        "ID": 6,
+        "buildingid":["15"]
       },
       "geometry": {
         "type": "Polygon",
@@ -178,7 +183,8 @@
         "centerlng": 121.578891,
         "centerlat": 24.985822,
         "search": ["社會科學資料中心", "社資中心", "人文研究中心"],
-        "ID": 7
+        "ID": 7,
+        "buildingid" : ["01"]
       },
       "geometry": {
         "type": "Polygon",
@@ -204,7 +210,8 @@
         "centerlng": 121.571937,
         "centerlat": 24.981671,
         "search": ["藝中", "藝文中心", "通識教育中心", "舜文大講堂"],
-        "ID": 8
+        "ID": 8,
+        "buildingid":["38","37"]
       },
       "geometry": {
         "type": "Polygon",
@@ -230,7 +237,8 @@
         "centerlng": 121.578350,
         "centerlat": 24.985580,
         "search": ["井塘樓", "教育學院", "教育學系", "幼兒教育研究所", "教育行政與政策研究所"],
-        "ID": 9
+        "ID": 9,
+        "buildingid":["02"]
       },
       "geometry": {
         "type": "Polygon",
@@ -256,7 +264,8 @@
         "centerlng": 121.576941,
         "centerlat": 24.987219,
         "search": ["學思樓"],
-        "ID": 10
+        "ID": 10,
+        "buildingid":["04"]
       },
       "geometry": {
         "type": "Polygon",
@@ -282,7 +291,8 @@
         "centerlng": 121.576894,
         "centerlat": 24.986857,
         "search": ["逸仙樓", "企業管理研究所", "MBA", "國際經營管理碩士學程", "IMBA", "經營管理碩士學程", "EMBA", "創新與創造力研究中心"],
-        "ID": 11
+        "ID": 11,
+        "buildingid":["05"]
       },
       "geometry": {
         "type": "Polygon",
@@ -308,7 +318,8 @@
         "centerlng": 121.576944,
         "centerlat": 24.987217,
         "search": ["學思樓", "輔導與諮商碩士學位學程"],
-        "ID": 12
+        "ID": 12,
+        "buildingid":["04"]
       },
       "geometry": {
         "type": "Polygon",
@@ -334,7 +345,8 @@
         "centerlng": 121.576238,
         "centerlat": 24.986838,
         "search": ["志希樓", "理學院", "應用物理研究所", "應物所"],
-        "ID": 13
+        "ID": 13,
+        "buildingid":["07"]
       },
       "geometry": {
         "type": "Polygon",
@@ -360,7 +372,8 @@
         "centerlng": 121.575630,
         "centerlat": 24.986947,
         "search": ["果夫樓", "應數系", "應用數學系", "心理系", "心理學系"],
-        "ID": 14
+        "ID": 14,
+        "buildingid":["08"]
       },
       "geometry": {
         "type": "Polygon",
@@ -386,7 +399,8 @@
         "centerlng": 121.575115,
         "centerlat": 24.987192,
         "search": ["資訊大樓"],
-        "ID": 15
+        "ID": 15,
+        "buildingid":["14"]
       },
       "geometry": {
         "type": "Polygon",
@@ -412,7 +426,8 @@
         "centerlng": 121.574287,
         "centerlat": 24.987019,
         "search": ["新聞館", "新聞學系", "廣告學系", "廣播電視學系", "傳播學士學位學程", "傳播學院大一大二不分系"],
-        "ID": 16
+        "ID": 16,
+        "buildingid":["18"]
       },
       "geometry": {
         "type": "Polygon",
@@ -438,7 +453,8 @@
         "centerlng": 121.573621,
         "centerlat": 24.987523,
         "search": ["大智樓"],
-        "ID": 17
+        "ID": 17,
+        "buildingid":["19"]
       },
       "geometry": {
         "type": "Polygon",
@@ -464,7 +480,8 @@
         "centerlng": 121.573576,
         "centerlat": 24.987275,
         "search": ["大仁樓", "資訊科學系", "資科系", "數位內容與科技學士學位學程", "社群網路與人智計算國際研究生博士學位學程"],
-        "ID": 18
+        "ID": 18,
+        "buildingid":["20"]
       },
       "geometry": {
         "type": "Polygon",
@@ -490,7 +507,8 @@
         "centerlng": 121.573665,
         "centerlat": 24.986758,
         "search": ["大勇樓", "國際傳播英語碩士學位學程", "IMICS"],
-        "ID": 19
+        "ID": 19,
+        "buildingid":["21"]
       },
       "geometry": {
         "type": "Polygon",
@@ -516,7 +534,8 @@
         "centerlng": 121.576481,
         "centerlat": 24.987275,
         "search": ["研究大樓"],
-        "ID": 20
+        "ID": 20,
+        "buildingid":["25"]
       },
       "geometry": {
         "type": "Polygon",
@@ -548,7 +567,8 @@
         "centerlng": 121.576598,
         "centerlat": 24.986659,
         "search": ["商學院", "商院", "國際經營與貿易學系", "金融學系", "會計學系", "統計學系", "企業管理學系", "資訊管理學系", "財務管理學系", "風險管理與保險學系", "科技管理與智慧財產研究所"],
-        "ID": 21
+        "ID": 21,
+        "buildingid":["26"]
       },
       "geometry": {
         "type": "Polygon",
@@ -574,7 +594,8 @@
         "centerlng": 121.573535,
         "centerlat": 24.986171,
         "search": ["綜合院館", "綜院", "國家發展研究所", "亞太研究英語碩士學位學程", "IMAS", "亞太研究英語博士學位學程", "IDAS", "法學院", "法律學系", "國際商務與法律博士英語學位學程 (DIBU)", "法律科際整合研究所", "國際事務學院", "外交學系", "東亞研究所", "俄羅斯研究所", "國際研究英語碩士學位學程(IMPIS)", "日本研究碩士學位學程", "選舉研究中心", "第三部門研究中心", "應用經濟與社會發展英語碩士學位學程(AESD)", "日本研究博士學位學程", "社會科學學院", "政治學系", "社會學系", "財政學系", "公共行政學系", "地政學系", "經濟學系", "民族學系", "勞工研究所", "社會工作研究所", "原住民族研究中心"],
-        "ID": 22
+        "ID": 22,
+        "buildingid":["27"]
       },
       "geometry": {
         "type": "Polygon",
@@ -603,7 +624,8 @@
         "centerlng": 121.577786,
         "centerlat": 24.986629,
         "search": ["附設實驗幼兒園"],
-        "ID": 23
+        "ID": 23,
+        "buildingid":["50"]
       },
       "geometry": {
         "type": "Polygon",
@@ -629,7 +651,8 @@
         "centerlng": 121.573724,
         "centerlat": 24.981715,
         "search": ["百年樓", "文學院", "中國文學系", "哲學系", "圖書資訊與檔案學研究所", "宗教研究所", "台灣文學研究所", "華人宗教研究中心"],
-        "ID": 24
+        "ID": 24,
+        "buildingid":["33"]
       },
       "geometry": {
         "type": "Polygon",
@@ -655,7 +678,8 @@
         "centerlng": 121.574354,
         "centerlat": 24.983005,
         "search": ["傳播學院", "數位內容碩士學位學程"],
-        "ID": 25
+        "ID": 25,
+        "buildingid" : ["31"]
       },
       "geometry": {
         "type": "Polygon",
@@ -681,7 +705,8 @@
         "centerlng": 121.573722,
         "centerlat": 24.982649,
         "search": ["道藩樓", "外語學院", "阿拉伯語文學系", "斯拉夫語文學系", "韓國語文學系", "土耳其語文學系", "歐洲語文學系"],
-        "ID": 26
+        "ID": 26,
+        "buildingid":["32"]
       },
       "geometry": {
         "type": "Polygon",
@@ -707,7 +732,8 @@
         "centerlng": 121.573076,
         "centerlat": 24.981273,
         "search": ["季陶樓", "歷史學系", "台灣史研究所", "英國語文學系", "日本語文學系", "語言學研究所"],
-        "ID": 27
+        "ID": 27,
+        "buildingid":["34"]
       },
       "geometry": {
         "type": "Polygon",
@@ -733,7 +759,8 @@
         "centerlng": 121.572335,
         "centerlat": 24.980986,
         "search": ["國際大樓", "華語文教學碩/博士學位學程", "外文中心", "華語文教學中心"],
-        "ID": 28
+        "ID": 28,
+        "buildingid":["36"]
       },
       "geometry": {
         "type": "Polygon",
@@ -759,7 +786,8 @@
         "centerlng": 121.577413,
         "centerlat": 24.986842,
         "search": ["莊敬一舍", "莊一"],
-        "ID": 29
+        "ID": 29,
+        "buildingid":["61"]
       },
       "geometry": {
         "type": "Polygon",
@@ -785,7 +813,8 @@
         "centerlng": 121.577640,
         "centerlat": 24.987126,
         "search": ["莊敬二舍", "莊二"],
-        "ID": 30
+        "ID": 30,
+        "buildingid":["62"]
       },
       "geometry": {
         "type": "Polygon",
@@ -811,7 +840,8 @@
         "centerlng": 121.577953,
         "centerlat": 24.987050,
         "search": ["莊敬三舍", "莊三"],
-        "ID": 31
+        "ID": 31,
+        "buildingid":["63"]
       },
       "geometry": {
         "type": "Polygon",
@@ -837,7 +867,8 @@
         "centerlng": 121.577135,
         "centerlat": 24.988272,
         "search": ["莊敬外舍", "莊外"],
-        "ID": 32
+        "ID": 32,
+        "buildingid":["64","65","66"]
       },
       "geometry": {
         "type": "Polygon",
@@ -863,7 +894,8 @@
         "centerlng": 121.578352,
         "centerlat": 24.986555,
         "search": ["莊敬九舍", "莊九"],
-        "ID": 33
+        "ID": 33,
+        "buildingid":["67"]
       },
       "geometry": {
         "type": "Polygon",
@@ -889,7 +921,8 @@
         "centerlng": 121.574189,
         "centerlat": 24.987550,
         "search": ["玫苑"],
-        "ID": 34
+        "ID": 34,
+        "buildingid":["83"]
       },
       "geometry": {
         "type": "Polygon",
@@ -915,7 +948,8 @@
         "centerlng": 121.568299,
         "centerlat": 24.978813,
         "search": ["自強一舍", "自強二舍", "自強三舍"],
-        "ID": 35
+        "ID": 35,
+        "buildingid":["70"]
       },
       "geometry": {
         "type": "Polygon",
@@ -941,7 +975,8 @@
         "centerlng": 121.570170,
         "centerlat": 24.979403,
         "search": ["自強五舍", "自強六舍", "自強七舍", "自強八舍"],
-        "ID": 36
+        "ID": 36,
+        "buildingid":["68","69"]
       },
       "geometry": {
         "type": "Polygon",
@@ -970,7 +1005,8 @@
         "centerlng": 121.571333,
         "centerlat": 24.980224,
         "search": ["自強九舍"],
-        "ID": 37
+        "ID": 37,
+        "buildingid":["71"]
       },
       "geometry": {
         "type": "Polygon",
@@ -1002,7 +1038,8 @@
         "centerlng": 121.572181,
         "centerlat": 24.980052,
         "search": ["自強十舍"],
-        "ID": 38
+        "ID": 38,
+        "buildingid":["A1", "A2" ,"A3", "A4"]
       },
       "geometry": {
         "type": "Polygon",
@@ -1031,7 +1068,8 @@
         "centerlng": 121.577336,
         "centerlat": 24.986135,
         "search": ["憩賢樓"],
-        "ID": 39
+        "ID": 39,
+        "buildingid":["03"]
       },
       "geometry": {
         "type": "Polygon",
@@ -1083,7 +1121,8 @@
         "centerlng": 121.575637,
         "centerlat": 24.985815,
         "search": ["風雩樓"],
-        "ID": 41
+        "ID": 41,
+        "buildingid":["10"]
       },
       "geometry": {
         "type": "Polygon",
@@ -1109,7 +1148,8 @@
         "centerlng": 121.575737,
         "centerlat": 24.986187,
         "search": ["四維堂"],
-        "ID": 42
+        "ID": 42,
+        "buildingid":["11"]
       },
       "geometry": {
         "type": "Polygon",
@@ -1135,7 +1175,8 @@
         "centerlng": 121.575404,
         "centerlat": 24.987384,
         "search": ["樂活館"],
-        "ID": 43
+        "ID": 43,
+        "buildingid":["12"]
       },
       "geometry": {
         "type": "Polygon",
@@ -1187,7 +1228,8 @@
         "centerlng": 121.574353,
         "centerlat": 24.987300,
         "search": ["集英樓", "福利社"],
-        "ID": 45
+        "ID": 45,
+        "buildingid":["17"]
       },
       "geometry": {
         "type": "Polygon",
@@ -1213,7 +1255,8 @@
         "centerlng": 121.573729,
         "centerlat": 24.984963,
         "search": ["體育館"],
-        "ID": 46
+        "ID": 46,
+        "buildingid":["24"]
       },
       "geometry": {
         "type": "Polygon",
@@ -1245,7 +1288,8 @@
         "centerlng": 121.577564,
         "centerlat": 24.985314,
         "search": ["游泳館", "重訓室"],
-        "ID": 47
+        "ID": 47,
+        "buildingid":["23"]
       },
       "geometry": {
         "type": "Polygon",
@@ -1271,7 +1315,8 @@
         "centerlng": 121.578239,
         "centerlat": 24.982270,
         "search": ["環山網球場"],
-        "ID": 48
+        "ID": 48,
+        "buildingid":["97"]
       },
       "geometry": {
         "type": "Polygon",
@@ -1297,7 +1342,8 @@
         "centerlng": 121.578201,
         "centerlat": 24.981150,
         "search": ["六期運動場", "六期"],
-        "ID": 49
+        "ID": 49,
+        "buildingid":["98"]
       },
       "geometry": {
         "type": "Polygon",
