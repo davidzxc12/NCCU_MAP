@@ -42,11 +42,13 @@
         "fill-opacity": 0.2,
         "department": "Administrations",
         "buildingen": "Computer Center",
+
         "buildingzh": "電子計算機中心",
         "centerlng": 121.574857,
         "centerlat": 24.986979,
         "search": ["電算中心", "計中", "計算機中心"],
-        "ID": 2
+        "ID": 2,
+        "buildingid":["14B"]
       },
       "geometry": {
         "type": "Polygon",
@@ -1068,7 +1070,8 @@
         "centerlng": 121.575711,
         "centerlat": 24.987445,
         "search": ["校友服務中心"],
-        "ID": 40
+        "ID": 40,
+        "buildingid" : ["09"]
       },
       "geometry": {
         "type": "Polygon",
@@ -1175,7 +1178,8 @@
         "centerlng": 121.575019,
         "centerlat": 24.987484,
         "search": ["樂活小舖"],
-        "ID": 44
+        "ID": 44,
+        "buildingid":["13"]
       },
       "geometry": {
         "type": "Polygon",
