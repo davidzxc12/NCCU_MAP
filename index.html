@@ -642,44 +642,9 @@
       }
       markersParking = [];
     }
-    function getParameterByName(name, url) {
-    if (!url) url = window.location.href;
-    name = name.replace(/[\[\]]/g, "\\$&");
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
-    }
-
     
     var main = function() {
-
-      var blid = getParameterByName('blid');
-      console.log(blid);
-      if (blid.length != 0){
-        $.getJSON("map.json", function(json) {
-          for (var i in json.features) {
-            console.log("outer for")
-            if(json.features[i].properties.buildingid!= undefined){
-              console.log("outer if");
-              for (var j=0; j<json.features[i].properties.buildingid.length; j++) {
-                if( blid == json.features[i].properties.buildingid[j]) {
-                console.log("inner if");
-                  var ct_lat = json.features[i].properties.centerlat;
-                  var ct_lng = json.features[i].properties.centerlng;
-                  var searchLatLng = {lat: ct_lat, lng: ct_lng};
-                
-                  placeMarkerAndPanTo(searchLatLng, map);
-                  break;
-                }
-              }
-            }
-          }
-        });
-      }
-
-
+      
       $("#getLocation").click(function(){
         map.panTo(currentPositionMarker.getPosition());
         map.setZoom(18);
@@ -800,12 +765,7 @@
       //   $( this ).fadeIn( 500 );
       // });
     };
-    $(document).ready(function(){
-      setTimeout(function(){
-        main();
-      },3000);
-      
-    });
+    $(document).ready(main);
     
   </script>
 </head>
