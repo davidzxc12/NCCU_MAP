@@ -155,6 +155,7 @@
         // event.feature.setProperty('isColorful', true);
         placeMarkerAndPanTo(event.latLng, map);
         infowindow.setPosition(marker.getPosition());
+        infowindow.disableAutoPan=true;
         infoContent(event.feature.getProperty('centerlat'),event.feature.getProperty('centerlng'));
         infowindow.open(map);
       });
