@@ -242,6 +242,7 @@
           for (var i in json.features) {
             if(json.features[i].properties.ID==id){
               addContent(json.features[i].properties.description);
+              console.log('add content');
             }
           }
         });
@@ -604,7 +605,8 @@
                 placeMarkerAndPanTo(searchLatLng, map);
                 infowindow.setPosition(new google.maps.LatLng(ct_lat,ct_lng));
                 infoContent(json.features[i].properties.ID);
-                infowindow.open();
+
+                infowindow.open(map);
                 flag=true;
               }
             }
