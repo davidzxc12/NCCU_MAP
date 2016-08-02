@@ -12,15 +12,12 @@
   <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Open+Sans:400;300'>
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/style.css"/>
   <!-- Material Design fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Bootstrap Material Design -->
-  <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.0/css/bootstrap-material-design.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.0/css/ripples.min.css"> -->
-  <!-- Compiled and minified CSS -->
-  <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css"> -->
+
 
   
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPVS-hEVThEv2Yj4oTJfWIeNNdE3TZZoI&libraries=places&language=zh-TW"></script>
@@ -31,173 +28,12 @@
   <script type="text/javascript" src="./js/markerwithlabel.js"></script>
   <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script> -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   
 
-  <!-- Compiled and minified JavaScript -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> -->
-  <!-- Twitter Bootstrap -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
-  <!-- Material Design for Bootstrap -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.0/js/material.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.0/js/ripples.min.js"></script> -->
-  <!-- <script>
-    $.material.init();
-    $.material.ripples();
-    $.material.input();
-    $.material.checkbox();
-    $.material.radio();
-  </script> -->
 
-  <style type="text/css">
-    /* Initial body */
-    body {
-      left: 0;
-      margin: 0;
-      overflow: hidden;
-      position: relative;
-    }
-    /* Initial menu */
-    .menu {
-      background: #ffffff;
-      /* #D1E0E8 background: #afdefa url('https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;*/
-      height: 100%;
-      width: 285px;
-      left: -285px;  /* start off behind the scenes */
-      position: absolute;
-      overflow: -moz-scrollbars-vertical;
-      overflow-y: auto;
-      -webkit-box-shadow: 5px 1px 9px 0px rgba(50, 50, 50, 0.67);
-      -moz-box-shadow:    5px 1px 9px 0px rgba(50, 50, 50, 0.67);
-      box-shadow:         5px 1px 9px 0px rgba(50, 50, 50, 0.67);
-      z-index:10;
-    }
-    .title-custom {
-      margin: 10px 0px 15px 0px;
-    }
-    .radio-custom {
-    }
-    .radio-custom label {
-      color: #424242;
-    }
-    .input-field-custom label {
-      color: #424242;
-      font-size: 16px;
-      margin: 0px 0px 20px 5px;
-    }
-    /* Basic styling */
-    .jumbotron {
-      background-image: url('https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/bg.png');
-      height: 100%;
-      -webkit-background-size: cover;
-         -moz-background-size: cover;
-           -o-background-size: cover;
-              background-size: cover;
-    }
-    .menu form {
-      padding-top: 10px;
-      padding-right: 20px;
-      padding-bottom: 10px;
-      padding-left: 20px;
-    }
-    /*.menu ul {
-      border-top: 3px solid #636366;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    .menu li {
-      border-bottom: 1px solid #636366;
-      font-family: 'Open Sans', sans-serif;
-      line-height: 45px;
-      padding-bottom: 3px;
-      padding-left: 20px;
-      padding-top: 3px;
-    }
-    .menu a {
-      color: #fff;
-      font-size: 15px;
-      text-decoration: none;
-      text-transform: uppercase;
-    }*/
-    .icon-close {
-      color: #ffffff;
-      background: #0097A7; /*#9DB9C8*/
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-      padding-left: 10px;
-      padding-top: 6px;
-    }
-    .icon-menu {
-      font-size: 16px;
-    }
-    .icon-menu i {
-      margin-right: 5px;
-
-    }
-    .navbar-header{
-      float:left !important;
-    }
-    .nav-right{
-      float:right !important;
-    }
-    .navbar-custom {
-      color: #0097A7;
-      background: #0097A7;
-      font-family: "Lucida Grande", "Arial", sans-serif;
-      font-size: 14px;
-      font-weight: bold;
-    }
-    .navbar-custom .navbar-brand {
-      color: #ffffff;
-      float: left;
-    }
-    .navbar-custom .navbar-nav>li>a {
-      color: #ffffff;
-    }
-    .navbar-img {
-      margin: 0px 0px 0px 25px;
-    }
-    a:hover, a:visited, a:link, a:active
-    {
-        text-decoration: none;
-    }
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    div#map {
-      height: 100%;
-    }
-    #Search{
-      margin-bottom:10%;
-    }
-    
-
-    
-    /*.labels {
-      box-sizing : border-box;*/
-      /*background: #05F24C;*/
-      /*box-shadow: 2px 2px 4px #333;
-      border: 3px solid #346FF7;
-      height: 50px;
-      width: 50px;
-      border-radius: 50px;*/
-      /*opacity :1;*/
-      /*color: red;
-      background-color: white;
-      font-family: "Lucida Grande", "Arial", sans-serif;
-      font-size: 14px;
-      font-weight: bold;
-      text-align: center;
-      /*width: 40px;*/
-      /*border: 2px solid black;*/
-      /*white-space: nowrap;*/
-    /*}*/
-
-  </style>
 
   <script type="text/javascript">
     var autocenter=false;
@@ -695,11 +531,13 @@
         map.panTo(currentPositionMarker.getPosition());
         map.setZoom(18);
         autocenter=true;
+        $('.icon-close').trigger("click");
       });
       
       $('#getNCCU').click(function(){
         map.panTo({lat: 24.986589, lng:121.575820});
         map.setZoom(18);
+       $('.icon-close').trigger("click");
       })
       
       $("input[type='checkbox']").click(function(){
@@ -715,6 +553,7 @@
       });
     
       $("#campus-srchbtn").click(function (event) {
+        var flag = false;
         event.preventDefault();
         $.getJSON("map.json", function(json) {
           for (var i in json.features) {
@@ -723,12 +562,19 @@
                 var ct_lat = json.features[i].properties.centerlat;
                 var ct_lng = json.features[i].properties.centerlng;
                 var searchLatLng = {lat: ct_lat, lng: ct_lng};
-                
                 placeMarkerAndPanTo(searchLatLng, map);
+                flag=true;
+                break;
               }
             }
+            if(flag){
+              $('.icon-close').trigger("click");
+            }
           }
+          if(!flag)
+            alert("找不到符合的建築物");
         });
+
       });
     
       $("#campus-navibtn").click(function (event) {
@@ -850,13 +696,11 @@
         <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
       </div>
       <!-- Menu -->
-      <div class="row">
+      <div class="row menu-row">
 
         <div class="col s12 radio-custom">
           <div class="row">
-            <div class="col s12">
-              <a class="title-custom waves-effect waves-light btn btn-fab btn-fab-mini red"><i class="fa fa-cog fa-spin"></i><font size="4px">  模式</font></a>
-            </div>
+            
             <div class="col s3">
               <a id="getLocation" class="btn-floating btn-large waves-effect waves-light #4CAF50"><i class="material-icons">my_location</i></a>
               <!--<input class="with-gap" name="ModeOption" type="radio" id="ModeOptionSearch" value="search" checked="checked" />-->
