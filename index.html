@@ -154,8 +154,8 @@
       map.data.addListener('click', function(event) {
         // event.feature.setProperty('isColorful', true);
         placeMarkerAndPanTo(event.latLng, map);
-        infowindow.setPosition(marker.getPosition());
-        infoContent(event.feature.getProperty('centerlat'),event.feature.getProperty('centerlng'));
+        infowindow.setPosition(new google.maps.LatLng(event.feature.getProperty('centerlat'),event.feature.getProperty('centerlng')));
+        infoContent(event.feature.getProperty('ID'));
         infowindow.open(map);
       });
       // When the user hovers, tempt them to click by outlining the letters.
@@ -237,11 +237,10 @@
       infowindow.setContent(content);
     }
 
-    function infoContent(lat,lng){
+    function infoContent(id){
       $.getJSON("map.json", function(json) {
           for (var i in json.features) {
-
-            if(json.features[i].properties.centerlat==lat && json.features[i].properties.centerlng == lng){
+            if(json.features[i].properties.ID==id){
               addContent(json.features[i].properties.description);
             }
           }
@@ -603,6 +602,9 @@
                 var ct_lng = json.features[i].properties.centerlng;
                 var searchLatLng = {lat: ct_lat, lng: ct_lng};
                 placeMarkerAndPanTo(searchLatLng, map);
+                infowindow.setPosition(new google.maps.LatLng(ct_lat,ct_lng));
+                infoContent(json.features[i].properties.ID);
+                infowindow.open();
                 flag=true;
               }
             }
