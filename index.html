@@ -506,7 +506,7 @@
     function readblid(){
       var blid = getParameterByName('blid');
       console.log(blid);
-      if (blid.length != 0){
+      if (blid != null){
         $.getJSON("map.json", function(json) {
           for (var i in json.features) {
             console.log("outer for")
