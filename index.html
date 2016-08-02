@@ -28,8 +28,6 @@
   <script type="text/javascript" src="./js/maplabel.js"></script>
   <script type="text/javascript" src="./js/markerwithlabel.js"></script>
   <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script> -->
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -39,6 +37,7 @@
 
 
   <script type="text/javascript">
+    var menuOpen=false;
     var autocenter=false;
     var userLocation;
     var map;
@@ -635,18 +634,20 @@
           $("#Navigate").show();
       });
       
-      $('.menu').on('swipeleft',function(){
-        console.log('swipe');
-        $('icon-close').trigger('click');
-      });
       /* Push the body and the nav over by 285px over */
       $('.icon-menu').click(function() {
+        if(menuOpen){
+          $('.icon-close').trigger('click');
+        }
+        else{
         $('.menu').animate({
           left: "0px"
         }, 200);
         $('div#map').animate({
           left: "285px"
         }, 200);
+        menuOpen=true;
+      }
       });
       /* Then push them back */
       $('.icon-close').click(function() {
@@ -656,6 +657,7 @@
         $('div#map').animate({
           left: "0px"
         }, 200);
+        menuOpen=false;
       });
       $('#reload1').click(function() {
         window.location.reload();
