@@ -155,6 +155,7 @@
         // event.feature.setProperty('isColorful', true);
         placeMarkerAndPanTo(event.latLng, map);
         infowindow.setPosition(marker.getPosition());
+        infoContent(event.feature.getProperty('centerlat'),event.feature.getProperty('centerlng'));
         infowindow.open(map);
       });
       // When the user hovers, tempt them to click by outlining the letters.
@@ -230,6 +231,23 @@
         }
     });
       
+    }
+
+    function addContent(content){
+      infowindow.setContent(content);
+    }
+
+    function infoContent(lat,lng){
+      $.getJSON("map.json", function(json) {
+          for (var i in json.features) {
+
+            if(json.features[i].properties.centerlat==lat && json.features[i].properties.centerlng == lng){
+              addContent(json.features[i].properties.description);
+            }
+          }
+        });
+            
+
     }
     
     // 加入Google autoComplete搜尋欄

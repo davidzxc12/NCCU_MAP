@@ -17,7 +17,8 @@
         "centerlat": 24.985869,
         "search": ["中正圖書館", "總圖"],
         "ID": 1,
-        "buildingid":["06"]
+        "buildingid":["06"],
+        "description":"為政治大學廣藏最豐富的圖書本館，也附含數位資源區，1至4樓為館藏暨閱讀區。B1有閱報區及24小時開放的學生自習區。"
       },
       "geometry": {
         "type": "Polygon",
@@ -186,7 +187,8 @@
         "centerlat": 24.985822,
         "search": ["社會科學資料中心", "社資中心", "人文研究中心"],
         "ID": 7,
-        "buildingid" : ["01"]
+        "buildingid" : ["01"],
+        "description":"本中心蒐集社會科學及人文方面的研究型資源，2015年起改以創新的數位圖書館為目標，現中心內有數位展演廳及互動討論空間。"
       },
       "geometry": {
         "type": "Polygon",
@@ -240,7 +242,8 @@
         "centerlat": 24.985580,
         "search": ["井塘樓", "教育學院", "教育學系", "幼兒教育研究所", "教育行政與政策研究所"],
         "ID": 9,
-        "buildingid":["02"]
+        "buildingid":["02"],
+        "description":"位於社資中心西側的井塘樓，包含教育學院系所、教育學程中心、幼兒教育研究所、教師研習中心。"
       },
       "geometry": {
         "type": "Polygon",
@@ -267,7 +270,8 @@
         "centerlat": 24.987219,
         "search": ["學思樓", "輔導與諮商碩士學位學程"],
         "ID": 10,
-        "buildingid":["04"]
+        "buildingid":["04"],
+        "description":"本中心名稱取「學而不思則罔，思而不學則殆」之意，除上課教室外，4樓供教育學院教師研習中心辦公之用。"
       },
       "geometry": {
         "type": "Polygon",
@@ -294,7 +298,8 @@
         "centerlat": 24.986857,
         "search": ["逸仙樓", "企業管理研究所", "MBA", "國際經營管理碩士學程", "IMBA", "經營管理碩士學程", "EMBA", "創新與創造力研究中心"],
         "ID": 11,
-        "buildingid":["05"]
+        "buildingid":["05"],
+        "description":"位於商學院旁，含研討教室、研究室、電腦教室，3、4F為商學院所使用，商學院國際事務辦公室(OIP)即在此大樓內"
       },
       "geometry": {
         "type": "Polygon",
@@ -321,7 +326,8 @@
         "centerlat": 24.986838,
         "search": ["志希樓", "理學院", "應用物理研究所", "應物所"],
         "ID": 13,
-        "buildingid":["07"]
+        "buildingid":["07"],
+        "description":"和果夫樓相對映，為應用數學系使用。"
       },
       "geometry": {
         "type": "Polygon",
@@ -348,7 +354,8 @@
         "centerlat": 24.986947,
         "search": ["果夫樓", "應數系", "應用數學系", "心理系", "心理學系"],
         "ID": 14,
-        "buildingid":["08"]
+        "buildingid":["08"],
+        "description":"和志希樓相對映，為心理學系使用。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1044,7 +1051,8 @@
         "centerlat": 24.986135,
         "search": ["憩賢樓"],
         "ID": 39,
-        "buildingid":["03"]
+        "buildingid":["03"],
+        "description":"為校內餐廳，1樓為平價美食街，2樓為西式餐廳，3樓中菜餐廳。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1098,7 +1106,8 @@
         "centerlat": 24.985815,
         "search": ["風雩樓"],
         "ID": 41,
-        "buildingid":["10"]
+        "buildingid":["10"],
+        "description":"1樓為交誼廳，設有桌椅和沙發，2樓有雲琇廳、韻律室及會議室，可向課外組租借。"
       },
       "geometry": {
         "type": "Polygon",
