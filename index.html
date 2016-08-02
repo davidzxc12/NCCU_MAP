@@ -20,7 +20,8 @@
 
 
   
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPVS-hEVThEv2Yj4oTJfWIeNNdE3TZZoI&libraries=places&language=zh-TW"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPVS-hEVThEv2Yj4oTJfWIeNNdE3TZZoI&libraries=places,geometry&language=zh-TW"></script>
+
 
       <!--Parameter: &v=3&amp;sensor=false&libraries=geometry,places&ext=.js -->
   <!--<script type="text/javascript" src="https://google-maps-utility-library-v3.googlecode.com/svn/tags/markerwithlabel/1.1.8/src/markerwithlabel.js"></script>-->
@@ -37,6 +38,7 @@
 
   <script type="text/javascript">
     var autocenter=false;
+    var userLocation;
     var map;
     var marker;
     var markersParking = []
@@ -128,7 +130,7 @@
  
       marker = new MarkerWithLabel({
         position: myLatLng,
-        map: map,
+        map: null,
         draggable: false,
         raiseOnDrag: true,
         animation: google.maps.Animation.DROP,
@@ -276,8 +278,24 @@
         icon: image
       });
     }
+
+    function nearby(loc){
+
+        console.log(google.maps.geometry.spherical.computeDistanceBetween (new google.maps.LatLng(24.986592,121.575841),loc));
+       // while(currentPositionMarker.map==undefined)
+       //   currentPositionMarker.setMap(map);
+       if( getParameterByName('blid')==null ){
+        if(google.maps.geometry.spherical.computeDistanceBetween (new google.maps.LatLng(24.986592,121.575841),loc)<400){
+          map.setCenter(loc);
+          console.log('user location')
+        }
+       }
+    }
     
     function displayAndWatch(position){
+      console.log("set location");
+      userLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+      nearby(userLocation);
       setCurrentPosition(position);
       watchCurrentPosition();
     }
@@ -525,6 +543,9 @@
        setTimeout(function(){
       readblid();
       },3000);
+
+
+       console.log(google.maps.geometry.spherical.computeDistanceBetween(new google.maps.LatLng(24.986592,121.575841),new google.maps.LatLng(24.984489,121.573616)));
       
       
       $("#getLocation").click(function(){
@@ -564,11 +585,11 @@
                 var searchLatLng = {lat: ct_lat, lng: ct_lng};
                 placeMarkerAndPanTo(searchLatLng, map);
                 flag=true;
-                break;
               }
             }
             if(flag){
               $('.icon-close').trigger("click");
+              break;
             }
           }
           if(!flag)
@@ -640,15 +661,16 @@
       
       if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(displayAndWatch,locError);
+        
       }
       else{
         alert("not support locate service!");
       }
       
-      setTimeout(function(){
-        while(currentPositionMarker.map==undefined)
-          currentPositionMarker.setMap(map)
-      },3000);
+    //  setTimeout(function(){
+       // while(currentPositionMarker.map==undefined)
+       //   currentPositionMarker.setMap(map);
+   //   },3000);
       
       
       // $('.hello').hover(function(){
