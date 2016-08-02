@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <!-- <meta http-equiv="refresh" content="5"> -->
-  <title>RichardTsai: NCCU - Campus Maps</title>
+  <title>NCCU - CampusMap</title>
   <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -134,6 +134,13 @@
     }
     .icon-menu i {
       margin-right: 5px;
+
+    }
+    .navbar-header{
+      float:left !important;
+    }
+    .nav-right{
+      float:right !important;
     }
     .navbar-custom {
       color: #0097A7;
@@ -144,7 +151,7 @@
     }
     .navbar-custom .navbar-brand {
       color: #ffffff;
-      float: right;
+      float: left;
     }
     .navbar-custom .navbar-nav>li>a {
       color: #ffffff;
@@ -779,7 +786,7 @@
       });
       $('#reload1').click(function() {
         window.location.reload();
-        alert("reload 1 works");
+        //alert("reload 1 works");
       });
       $('#reload2').click(function() {
         window.location.reload();
@@ -820,44 +827,18 @@
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="javascript:void(0)">
-            <img class="navbar-img" src="img/applogo.png" height="54" width="54">
-          </a>
           <a href="javascript:void(0)" class="navbar-brand" id="reload1">國立政治大學－校園地圖</a>
         </div>
         <!-- Collection of nav links, forms, and other content for toggling -->
-        <div class="navbar-collapse collapse navbar-inverse-collapse">
-
+        <div class="nav-right">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active">
-              <a href="javascript:void(0)" class="icon-menu" data-toggle="collapse" data-target=".navbar-inverse-collapse">
-              <i class="fa fa-refresh fa-spin"></i>
-              尋找欲前往建築
+            <li class="a">
+              <a href="javascript:void(0)" class="icon-menu" >
+              <i class="fa fa-search" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
 
-          <ul class="nav navbar-nav navbar-right">
-              <li><a href="https://www.nccu.edu.tw">政大首頁</a></li>
-              <li><a href="https://i.nccu.edu.tw">愛政大</a></li>
-              <li class="dropdown">
-                  <a data-toggle="dropdown" class="dropdown-toggle" href="#">訊息更新 <b class="caret"></b></a>
-                  <ul role="menu" class="dropdown-menu">
-                      <li><a href="javascript:void(0)">Inbox</a></li>
-                      <li><a href="javascript:void(0)">Drafts</a></li>
-                      <li><a href="javascript:void(0)">Sent Items</a></li>
-                      <li class="divider"></li>
-                      <li><a href="javascript:void(0)">Trash</a></li>
-                  </ul>
-              </li>
-              <li id="reload2"><a href="javascript:void(0)">重新載入Google Map</a></li>
-          </ul>
 
         </div>
       </div>
