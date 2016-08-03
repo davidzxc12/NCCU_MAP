@@ -33,6 +33,10 @@ body {
       margin: 0px 0px 20px 5px;
     }
     /* Basic styling */
+
+    #pac-input{
+      display: none
+    }
     .jumbotron {
       background-image: url('https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/bg.png');
       height: 100%;
