@@ -10,7 +10,7 @@ var menuOpen=false;
     var overlay;
     var currentPositionMarker;
     var infowindow=new google.maps.InfoWindow({
-      maxWidth:175
+      maxWidth:130
   });
 
     USGSOverlay.prototype = new google.maps.OverlayView();
@@ -19,6 +19,7 @@ var menuOpen=false;
   
         
     function initMap() {
+      
 
       var myLatLng = {lat: 24.986592, lng: 121.575841};
       map = new google.maps.Map(document.getElementById('map'), {
@@ -503,6 +504,7 @@ var menuOpen=false;
     
     var main = function() {
        setTimeout(function(){
+        $('.menu').css('left',$('.menu').width()*-1+"px" );
       readblid();
       },0);
 
@@ -561,6 +563,14 @@ var menuOpen=false;
         });
 
       });
+
+      $(window).resize(function(){
+       
+        if(!menuOpen){
+          $('.menu').css('left',$('.menu').width()*-1+"px" );
+        }
+
+      })
     
      
     
@@ -572,22 +582,21 @@ var menuOpen=false;
           $('.icon-close').trigger('click');
         }
         else{
+
         $('.menu').animate({
           left: "0px"
         }, 200);
-        $('div#map').animate({
-          left: "285px"
-        }, 200);
+
+
+
+       
         menuOpen=true;
       }
       });
       /* Then push them back */
       $('.icon-close').click(function() {
         $('.menu').animate({
-          left: "-285px"
-        }, 200);
-        $('div#map').animate({
-          left: "0px"
+          left: $('.menu').width()*-1+"px"
         }, 200);
         menuOpen=false;
       });
