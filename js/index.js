@@ -10,6 +10,7 @@ var menuOpen=false;
     var overlay;
     var currentPositionMarker;
     var infowindow=new google.maps.InfoWindow({
+      maxWidth:175
   });
 
     USGSOverlay.prototype = new google.maps.OverlayView();
