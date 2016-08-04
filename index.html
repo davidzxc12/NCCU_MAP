@@ -1,187 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <!-- <meta http-equiv="refresh" content="5"> -->
-  <title>NCCU - CampusMap</title>
-  <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Open+Sans:400;300'>
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="css/style.css"/>
-  <!-- Material Design fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-
-  
-
-
-
-      <!--Parameter: &v=3&amp;sensor=false&libraries=geometry,places&ext=.js -->
-  <!--<script type="text/javascript" src="https://google-maps-utility-library-v3.googlecode.com/svn/tags/markerwithlabel/1.1.8/src/markerwithlabel.js"></script>-->
-
-
-  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script> -->
-
-
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  
-    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <title>NCCU - CampusMap</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Open+Sans:400;300'>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Parameter: &v=3&amp;sensor=false&libraries=geometry,places&ext=.js -->
+    <!--<script type="text/javascript" src="https://google-maps-utility-library-v3.googlecode.com/svn/tags/markerwithlabel/1.1.8/src/markerwithlabel.js"></script>-->
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 
 <body onload="initMap()">
-
-   
-
     <!-- Main body -->
     <!-- <div class="jumbotron"> -->
-
-    <div role="navigation" class="navbar-default navbar-custom"> <!-- navbar -->
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <a href="javascript:void(0)" class="navbar-brand" id="reload1">國立政治大學－校園地圖</a>
+    <div role="navigation" class="navbar-default navbar-custom">
+        <!-- navbar -->
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a href="javascript:void(0)" class="navbar-brand" id="reload1">國立政治大學－校園地圖</a>
+            </div>
+            <!-- Collection of nav links, forms, and other content for toggling -->
+            <div class="nav-right">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="a">
+                        <a href="javascript:void(0)" class="icon-menu">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!-- Collection of nav links, forms, and other content for toggling -->
-        <div class="nav-right">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="a">
-              <a href="javascript:void(0)" class="icon-menu" >
-              <i class="fa fa-search" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-
-
-        </div>
-      </div>
     </div>
-
     <div class='row'>
-    
-     <div class="menu col s12 m4 l3">
-      <!-- Menu icon -->
-      <div class="icon-close">
-        <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
-      </div>
-      <!-- Menu -->
-      <div class="row menu-row">
-
-        <div class="col s12 radio-custom">
-          <div class="row">
-            
-            <div class="col s3 _icon">
-              <a id="getLocation" class="btn-floating btn-large waves-effect waves-light #4CAF50"><i class="material-icons">my_location</i></a>
-              <!--<input class="with-gap" name="ModeOption" type="radio" id="ModeOptionSearch" value="search" checked="checked" />-->
+        <div class="menu col s12 m4 l3">
+            <!-- Menu icon -->
+            <div class="icon-close">
+                <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
             </div>
-            <div class="col s3 _text">
-              <label for="ModeOptionSearch" ><font size="3px">追蹤定位</font></label>
-            </div>
-            <div class="col s3 _icon">
-              <a id="getNCCU" class="btn-floating btn-large waves-effect waves-light #4CAF50"><i class="material-icons">language</i></a>
-              <!--<input class="with-gap" name="ModeOption" type="radio" id="ModeOptionNavigate" value="navigate" />-->
-            </div>
-            <div class="col s3 _text">  
-              <label for="ModeOptionNavigate"><font size="3px">俯瞰校園</font></label>
-            </div>
-
-            <!--<div class="col s12">-->
-            <!--  <div class="progress">-->
-            <!--    <div class="indeterminate"></div>-->
-            <!--  </div>-->
-            <!--</div>-->
-          </div>
-        </div>
-
-    		
-
-  		  <form action="#" id="Search" class="col s12">
-
-          <div class="input-field input-field-custom">
-            <div class="row">
-              <div class="col s12">
-                <a class="title-custom  btn btn-fab btn-fab-mini red"><i class="fa fa-search-plus"></i><font size="4px">  搜尋</font></a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col s8">
-    		        <input name="pac-input" id="pac-input" class="controls" type="text" class="validate">
-    		        <input name="campus-input" id="campus-input" class="controls" type="text" class="validate">
- <!-- prefix -->
-              </div>
-              <div class="col s3">
-                <span class="input-group-btn">
+            <!-- Menu -->
+            <div class="row menu-row">
+                <div class="col s12 radio-custom">
+                    <div class="row">
+                        <div class="col s3 _icon">
+                            <a id="getLocation" class="btn-floating btn-large waves-effect waves-light #4CAF50"><i class="material-icons">my_location</i></a>
+                            <!--<input class="with-gap" name="ModeOption" type="radio" id="ModeOptionSearch" value="search" checked="checked" />-->
+                        </div>
+                        <div class="col s3 _text">
+                            <label for="ModeOptionSearch">
+                                <font size="3px">追蹤定位</font>
+                            </label>
+                        </div>
+                        <div class="col s3 _icon">
+                            <a id="getNCCU" class="btn-floating btn-large waves-effect waves-light #4CAF50"><i class="material-icons">language</i></a>
+                            <!--<input class="with-gap" name="ModeOption" type="radio" id="ModeOptionNavigate" value="navigate" />-->
+                        </div>
+                        <div class="col s3 _text">
+                            <label for="ModeOptionNavigate">
+                                <font size="3px">俯瞰校園</font>
+                            </label>
+                        </div>
+                        <!--<div class="col s12">-->
+                        <!--  <div class="progress">-->
+                        <!--    <div class="indeterminate"></div>-->
+                        <!--  </div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+                <form action="#" id="Search" class="col s12">
+                    <div class="input-field input-field-custom">
+                        <div class="row">
+                            <div class="col s12">
+                                <a class="title-custom  btn btn-fab btn-fab-mini red"><i class="fa fa-search-plus"></i><font size="4px">  搜尋</font></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s8">
+                                <input name="pac-input" id="pac-input" class="controls" type="text" class="validate">
+                                <input name="campus-input" id="campus-input" class="controls" type="text" class="validate">
+                                <!-- prefix -->
+                            </div>
+                            <div class="col s3">
+                                <span class="input-group-btn">
                   <!-- <a type="submit" class="waves-effect waves-light btn btn-fab btn-fab-mini"> -->
                     <button id="campus-srchbtn" class="btn-floating btn-large waves-effect waves-light #4CAF50">
                       <i class="material-icons">send</i>
                     </button>
                   <!-- </a> -->
                 </span>
-              </div>
-              <!-- <div class="col s12">
+                            </div>
+                            <!-- <div class="col s12">
                 <span class="help-block"><code>Building you are looking for</code></span>
               </div> -->
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <a class="title-custom waves-effect waves-light btn btn-fab btn-fab-mini red"><i class="fa fa-random"></i><font size="4px">  探索</font></a>
+                            </div>
+                            <div class="col s12">
+                                <input type="checkbox" class="filled-in" id="checkbox-Administrations" value="Administrations" checked/>
+                                <label for="checkbox-Administrations"><i style="color:#795548;" class="fa fa-file-text"></i> 行政單位</label>
+                            </div>
+                            <div class="col s12">
+                                <input type="checkbox" class="filled-in" id="checkbox-Education" value="Education" checked/>
+                                <label for="checkbox-Education"><i style="color:#E91E63;" class="fa fa-book"></i> 教學單位</label>
+                            </div>
+                            <div class="col s12">
+                                <input type="checkbox" class="filled-in" id="checkbox-Dormitories" value="Dormitories" checked/>
+                                <label for="checkbox-Dormitories"><i style="color:#4CAF50;" class="fa fa-home"></i> 宿舍</label>
+                            </div>
+                            <div class="col s12">
+                                <input type="checkbox" class="filled-in" id="checkbox-Services" value="Services" checked/>
+                                <label for="checkbox-Services"><i style="color:#673AB7;" class="fa fa-thumbs-up"></i> 服務空間</label>
+                            </div>
+                            <div class="col s12">
+                                <input type="checkbox" class="filled-in" id="checkbox-Sports" value="Sports" checked/>
+                                <label for="checkbox-Sports"><i style="color:#2196F3;" class="fa fa-child"></i> 運動空間</label>
+                            </div>
+                            <div class="col s12">
+                                <input type="checkbox" class="filled-in" id="checkbox-Attractions" value="Attractions" checked/>
+                                <label for="checkbox-Attractions"><i style="color:#F44336;" class="fa fa-tree"></i> 休憩景點</label>
+                            </div>
+                            <div class="col s12">
+                                <input type="checkbox" class="filled-in" id="checkbox-Parkings" value="Parkings" />
+                                <label for="checkbox-Parkings"><i style="color:#FF0000;" class="fa fa-car"></i> 停車場</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-
-            <div class="row">
-              <div class="col s12">
-                <a class="title-custom waves-effect waves-light btn btn-fab btn-fab-mini red"><i class="fa fa-random"></i><font size="4px">  探索</font></a>
-              </div>
-              <div class="col s12">
-                <input type="checkbox" class="filled-in" id="checkbox-Administrations" value="Administrations" checked/>
-                <label for="checkbox-Administrations"><i style="color:#795548;" class="fa fa-file-text"></i>  行政單位</label>
-              </div>
-              <div class="col s12">
-                <input type="checkbox" class="filled-in" id="checkbox-Education" value="Education" checked/>
-                <label for="checkbox-Education"><i style="color:#E91E63;" class="fa fa-book"></i> 教學單位</label>
-              </div>
-              <div class="col s12">
-                <input type="checkbox" class="filled-in" id="checkbox-Dormitories" value="Dormitories" checked/>
-                <label for="checkbox-Dormitories"><i style="color:#4CAF50;" class="fa fa-home"></i> 宿舍</label>
-              </div>
-              <div class="col s12">
-                <input type="checkbox" class="filled-in" id="checkbox-Services" value="Services" checked/>
-                <label for="checkbox-Services"><i style="color:#673AB7;" class="fa fa-thumbs-up"></i> 服務空間</label>
-              </div>
-              <div class="col s12">
-                <input type="checkbox" class="filled-in" id="checkbox-Sports" value="Sports" checked/>
-                <label for="checkbox-Sports"><i style="color:#2196F3;" class="fa fa-child"></i> 運動空間</label>
-              </div>
-              <div class="col s12">
-                <input type="checkbox" class="filled-in" id="checkbox-Attractions" value="Attractions" checked/>
-                <label for="checkbox-Attractions"><i style="color:#F44336;" class="fa fa-tree"></i> 休憩景點</label>
-              </div>
-              <div class="col s12">
-                <input type="checkbox" class="filled-in" id="checkbox-Parkings" value="Parkings"/>
-                <label for="checkbox-Parkings"><i style="color:#FF0000;" class="fa fa-car"></i> 停車場</label>
-              </div>
-            </div>
-  		    </div>
-
-  		  </form>
-  		  
-  		</div>
+        </div>
+        <!-- Loading Google Maps Javascript API -->
+        <div id="map" class="col s12"></div>
     </div>
-
-
-  <!-- Loading Google Maps Javascript API -->
-  <div id="map" class="col s12"></div>
-  </div>
-  <!--Import jQuery before materialize.js-->
-
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPVS-hEVThEv2Yj4oTJfWIeNNdE3TZZoI&libraries=places,geometry&language=zh-TW"></script>
-      <script type="text/javascript" src="./js/maplabel.js"></script>
-  <script type="text/javascript" src="./js/markerwithlabel.js"></script>
-  <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/maplabel.js"></script>
+    <script type="text/javascript" src="./js/markerwithlabel.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
 </body>
+
 </html>

@@ -565,14 +565,7 @@ var menuOpen=false;
       });
 
       $(window).resize(function(){
-        if($(window).width()<840 && $(window).width()>600){
-          $('._icon').addClass('s4').removeClass('s3');
-          $('._text').addClass('s2').removeClass('s3');
-        }
-        else{
-          $('._icon').addClass('s3').removeClass('s4');
-          $('._text').addClass('s3').removeClass('s2');
-        }
+        
        
         if(!menuOpen){
           $('.menu').css('left',$('.menu').width()*-1+"px" );

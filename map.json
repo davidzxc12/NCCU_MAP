@@ -1365,6 +1365,114 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "isColorful": "true",
+        "stroke-color": "#C2185B",
+        "stroke-weight": 1,
+        "stroke-opacity": 1,
+        "fill-color": "#F44336",
+        "fill-opacity": 0.2,
+        "department": "Education",
+        "buildingen": "Research & Innovation Incubation Center",
+        "buildingzh": "研究暨創新教育成總中心",
+        "centerlng": 121.575148,
+        "centerlat": 24.979075,
+        "search": ["研究暨創新教育成總中心"],
+        "ID": 51,
+        "buildingid":["35"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [121.574974, 24.979145], [121.575237, 24.979160], [121.575269, 24.978865], [121.574974, 24.978938], [121.574974, 24.979145]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "isColorful": "true",
+        "stroke-color": "#E64A19",
+        "stroke-weight": 1,
+        "stroke-opacity": 1,
+        "fill-color": "#F44336",
+        "fill-opacity": 0.2,
+        "department": "Attractions",
+        "buildingen": "The President House",
+        "buildingzh": "校長之家",
+        "centerlng": 121.573881,
+        "centerlat": 24.989182,
+        "search": ["校長之家"],
+        "ID": 52,
+        "buildingid":["X01"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [121.573807, 24.989205], [121.573848, 24.989214], [121.573844, 24.989226], [121.573903, 24.989240], [121.573907, 24.989228], [121.573933, 24.989232], [121.573953, 24.989155], [121.573826, 24.989130], [121.573807, 24.989205]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "isColorful": "true",
+        "stroke-color": "#512DA8",
+        "stroke-weight": 1,
+        "stroke-opacity": 1,
+        "fill-color": "#673AB7",
+        "fill-opacity": 0.2,
+        "department": "Services",
+        "buildingen": "I-House",
+        "buildingzh": "國際學人暨學生會館",
+        "centerlng": 121.575028,
+        "centerlat": 24.990168,
+        "search": ["國際學人暨學生會館"],
+        "ID": 53,
+        "buildingid":["72"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [121.575028, 24.990168], [121.575217, 24.990269], [121.575232, 24.990248], [121.575246, 24.990254], [121.575237, 24.990268], [121.575288, 24.990294], [121.575301, 24.990279], [121.575370,24.990316], [121.575415,24.990248], [121.575365,24.990221], [121.575380,24.990198], [121.575355,24.990186], [121.575346,24.990198], [121.575320,24.990184], [121.575315,24.990190], [121.575281,24.990172], [121.575088,24.990074], [121.575028,24.990168]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "isColorful": "true",
+        "stroke-color": "#388E3C",
+        "stroke-weight": 1,
+        "stroke-opacity": 1,
+        "fill-color": "#4CAF50",
+        "fill-opacity": 0.2,
+        "department": "Dormitories",
+        "buildingen": "The Second Dormitory",
+        "buildingzh": "第二學人宿舍",
+        "centerlng": 121.573876,
+        "centerlat": 24.989927,
+        "search": ["第二學人宿舍"],
+        "ID": 54,
+        "buildingid":["93"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [121.573774, 24.989969], [121.574007, 24.989977], [121.574075, 24.989998], [121.574078, 24.989987], [121.574140, 24.990002], [121.574163, 24.989935], [121.574049, 24.989901], [121.574036, 24.989932], [121.574025, 24.989926], [121.574022, 24.989936], [121.573991, 24.989936], [121.573992, 24.989884], [121.573788, 24.989880], [121.573788, 24.989895], [121.573773, 24.989897], [121.573774, 24.989969]
+          ]
+        ]
+      }
     }
   ]
 }
