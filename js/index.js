@@ -565,7 +565,7 @@ var menuOpen=false;
       });
 
       $(window).resize(function(){
-        if($(window).width()<840){
+        if($(window).width()<840 && $(window).width()>600){
           $('._icon').addClass('s4').removeClass('s3');
           $('._text').addClass('s2').removeClass('s3');
         }
