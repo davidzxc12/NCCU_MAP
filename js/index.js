@@ -511,9 +511,13 @@ var menuOpen=false;
 
       
       $("#getLocation").click(function(){
+        if(currentPositionMarker!=undefined){
         map.panTo(currentPositionMarker.getPosition());
         map.setZoom(18);
-        autocenter=true;
+        autocenter=true;}
+        else{
+          window.alert("找不到GPS定位");
+        }
         $('.icon-close').trigger("click");
       });
       
