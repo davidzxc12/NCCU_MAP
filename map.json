@@ -49,7 +49,8 @@
         "centerlat": 24.986979,
         "search": ["電算中心", "計中", "計算機中心"],
         "ID": 2,
-        "buildingid":["14B"]
+        "buildingid":["14B"],
+        "description":"為本校電算中心所在大樓，1樓有會議廳、藝廊，3樓為電腦教室，其餘為機房及辦公空間。門口廣場也是學生們練習活動的熱門場地。"
       },
       "geometry": {
         "type": "Polygon",
@@ -76,7 +77,8 @@
         "centerlat": 24.986147,
         "search": ["行大", "行政大樓", "校長室", "副校長室", "教學事務處", "教務處", "學生事務處", "學務處", "總務處", "研究發展處", "研究發展中心", "研發處", "國際合作事務處", "國合處", "秘書處", "人事室", "主計室", "教學發展中心", "性別平等教育委員會", "頂尖大學計畫辦公室"],
         "ID": 3,
-        "buildingid":["16"]
+        "buildingid":["16"],
+        "description":"主要為政治大學行政人員辦公大樓，校長室、教務處、學務處、總務處等行政單位皆位於本大樓，此外1樓設有水岸咖啡廳。"
       },
       "geometry": {
         "type": "Polygon",
@@ -106,7 +108,8 @@
         "centerlat": 24.987380,
         "search": ["駐警隊", "警衛室"],
         "ID": 4,
-        "buildingid" : ["22"]
+        "buildingid" : ["22"],
+        "description":"政大校園正門警衛室"
       },
       "geometry": {
         "type": "Polygon",
@@ -133,7 +136,8 @@
         "centerlat": 24.987339,
         "search": ["收發室"],
         "ID": 5,
-        "buildingid":["22"]
+        "buildingid":["22B"],
+        "description":"處理校內師生包裹信件之收發室。"
       },
       "geometry": {
         "type": "Polygon",
@@ -160,7 +164,8 @@
         "centerlat": 24.987679,
         "search": ["健康中心"],
         "ID": 6,
-        "buildingid":["15"]
+        "buildingid":["15"],
+        "description":"一樓為台北市立聯合醫院政大門診部。二樓為本校身心健康中心，提供師生全方位之「身」、「心」服務。"
       },
       "geometry": {
         "type": "Polygon",
@@ -215,7 +220,8 @@
         "centerlat": 24.981671,
         "search": ["藝中", "藝文中心", "通識教育中心", "舜文大講堂"],
         "ID": 8,
-        "buildingid":["38","37"]
+        "buildingid":["38","37"],
+        "description":"為本校舉辦戲劇、舞蹈、音樂、電影、美術等各類展演的主要場所，包含各類社團活動空間。 另有大禮堂作為各類大型表演活動、典禮、會議、演講及電影放映等之場所。"
       },
       "geometry": {
         "type": "Polygon",
@@ -243,7 +249,7 @@
         "search": ["井塘樓", "教育學院", "教育學系", "幼兒教育研究所", "教育行政與政策研究所"],
         "ID": 9,
         "buildingid":["02"],
-        "description":"位於社資中心西側的井塘樓，包含教育學院系所、教育學程中心、幼兒教育研究所、教師研習中心。"
+        "description":"位於社會科學資料中心西側的井塘樓，包含教育學院系所、教育學程中心、幼兒教育研究所、教師研習中心。"
       },
       "geometry": {
         "type": "Polygon",
@@ -327,7 +333,7 @@
         "search": ["志希樓", "理學院", "應用物理研究所", "應物所"],
         "ID": 13,
         "buildingid":["07"],
-        "description":"和果夫樓相對映，為應用數學系使用。"
+        "description":"和果夫樓相對映，為理學院、應物所使用，以及教授研究室。"
       },
       "geometry": {
         "type": "Polygon",
@@ -355,7 +361,7 @@
         "search": ["果夫樓", "應數系", "應用數學系", "心理系", "心理學系"],
         "ID": 14,
         "buildingid":["08"],
-        "description":"和志希樓相對映，為心理學系使用。"
+        "description":"和志希樓相對映，為應用數學系、心理學系及教授研究室。"
       },
       "geometry": {
         "type": "Polygon",
@@ -382,7 +388,8 @@
         "centerlat": 24.987192,
         "search": ["資訊大樓"],
         "ID": 15,
-        "buildingid":["14"]
+        "buildingid":["14"],
+        "description":"共計四層樓，為一般上課教室。四樓有一間上課用電腦教室。"
       },
       "geometry": {
         "type": "Polygon",
@@ -409,7 +416,8 @@
         "centerlat": 24.987019,
         "search": ["新聞館", "新聞學系", "廣告學系", "廣播電視學系", "傳播學士學位學程", "傳播學院大一大二不分系"],
         "ID": 16,
-        "buildingid":["18"]
+        "buildingid":["18"],
+        "description":"新聞系、廣告系、廣播電視學系、傳播學士學位學程、傳院大一大二不分系​的大學部辦公室皆位於本館。"
       },
       "geometry": {
         "type": "Polygon",
@@ -436,7 +444,8 @@
         "centerlat": 24.987523,
         "search": ["大智樓"],
         "ID": 17,
-        "buildingid":["19"]
+        "buildingid":["19"],
+        "description":"大智樓為理學院所使用。1樓為普通教室，2-3樓為心理系、應數系、資科系、教授研究室，部分為教室，4樓為心理系實驗室。"
       },
       "geometry": {
         "type": "Polygon",
@@ -463,7 +472,8 @@
         "centerlat": 24.987275,
         "search": ["大仁樓", "資訊科學系", "資科系", "數位內容與科技學士學位學程", "社群網路與人智計算國際研究生博士學位學程"],
         "ID": 18,
-        "buildingid":["20"]
+        "buildingid":["20"],
+        "description":"大仁樓為資訊科學系所使用，部分為普通教室。"
       },
       "geometry": {
         "type": "Polygon",
@@ -490,7 +500,8 @@
         "centerlat": 24.986758,
         "search": ["大勇樓", "國際傳播英語碩士學位學程", "IMICS"],
         "ID": 19,
-        "buildingid":["21"]
+        "buildingid":["21"],
+        "description":"大勇樓1、2樓分別為普通教室及E 化教室。3樓為新聞中心、影音實驗室等單位所用。4樓則為傳院師生、博碩士所用。"
       },
       "geometry": {
         "type": "Polygon",
@@ -517,7 +528,8 @@
         "centerlat": 24.987275,
         "search": ["研究大樓"],
         "ID": 20,
-        "buildingid":["25"]
+        "buildingid":["25"],
+        "description":"各樓層設置會客室，供教師使用。含研究室、專案研究、普通教室與階梯教室。"
       },
       "geometry": {
         "type": "Polygon",
@@ -550,7 +562,8 @@
         "centerlat": 24.986659,
         "search": ["商學院", "商院", "國際經營與貿易學系", "金融學系", "會計學系", "統計學系", "企業管理學系", "資訊管理學系", "財務管理學系", "風險管理與保險學系", "科技管理與智慧財產研究所"],
         "ID": 21,
-        "buildingid":["26"]
+        "buildingid":["26"],
+        "description":"商學院八個系所及一個獨立所，三個專業MBA學程，和十六個院級整合研究中心的主要活動範圍。"
       },
       "geometry": {
         "type": "Polygon",
@@ -577,7 +590,8 @@
         "centerlat": 24.986171,
         "search": ["綜合院館", "綜院", "國家發展研究所", "亞太研究英語碩士學位學程", "IMAS", "亞太研究英語博士學位學程", "IDAS", "法學院", "法律學系", "國際商務與法律博士英語學位學程 (DIBU)", "法律科際整合研究所", "國際事務學院", "外交學系", "東亞研究所", "俄羅斯研究所", "國際研究英語碩士學位學程(IMPIS)", "日本研究碩士學位學程", "選舉研究中心", "第三部門研究中心", "應用經濟與社會發展英語碩士學位學程(AESD)", "日本研究博士學位學程", "社會科學學院", "政治學系", "社會學系", "財政學系", "公共行政學系", "地政學系", "經濟學系", "民族學系", "勞工研究所", "社會工作研究所", "原住民族研究中心"],
         "ID": 22,
-        "buildingid":["27"]
+        "buildingid":["27"],
+        "description":"為法學院、社會科學院及國際事務學院所使用，除了做為辦公室、上課教室及研究室外，亦設有綜院圖書館。"
       },
       "geometry": {
         "type": "Polygon",
@@ -602,12 +616,13 @@
         "fill-opacity": 0.2,
         "department": "Education",
         "buildingen": "The Affiliated Experimental Elementary School Preschool of NCCU",
-        "buildingzh": "附設實驗幼兒園",
+        "buildingzh": "實小附設幼兒園",
         "centerlng": 121.577786,
         "centerlat": 24.986629,
-        "search": ["附設實驗幼兒園"],
+        "search": ["實小附設幼兒園"],
         "ID": 23,
-        "buildingid":["50"]
+        "buildingid":["50"],
+        "description":"成立於1960年，為政治大學附設實驗國民小學之附設幼兒園。"
       },
       "geometry": {
         "type": "Polygon",
@@ -634,7 +649,8 @@
         "centerlat": 24.981715,
         "search": ["百年樓", "文學院", "中國文學系", "哲學系", "圖書資訊與檔案學研究所", "宗教研究所", "台灣文學研究所", "華人宗教研究中心"],
         "ID": 24,
-        "buildingid":["33"]
+        "buildingid":["33"],
+        "description":"百年樓起名原為紀念政大首任校長陳百年先生，為文學院所使用，由中國文學系、哲學學系、宗教研究所以及圖書資訊與檔案研究所進駐。"
       },
       "geometry": {
         "type": "Polygon",
@@ -661,7 +677,8 @@
         "centerlat": 24.983005,
         "search": ["傳播學院", "數位內容碩士學位學程"],
         "ID": 25,
-        "buildingid" : ["31"]
+        "buildingid" : ["31"],
+        "description":"內有傳播學院辦公室、院長辦公室、研究部、研究中心、政大之聲實習廣播電臺、傳院圖書館及傳院劇場。"
       },
       "geometry": {
         "type": "Polygon",
@@ -688,7 +705,8 @@
         "centerlat": 24.982649,
         "search": ["道藩樓", "外語學院", "阿拉伯語文學系", "斯拉夫語文學系", "韓國語文學系", "土耳其語文學系", "歐洲語文學系"],
         "ID": 26,
-        "buildingid":["32"]
+        "buildingid":["32"],
+        "description":"道藩樓起名原為紀念台灣文藝運動先鋒張道藩先生，主要為斯拉夫與文學系、土耳其語文學系、阿拉伯語文學系及韓國語文學系所用。"
       },
       "geometry": {
         "type": "Polygon",
@@ -715,7 +733,8 @@
         "centerlat": 24.981273,
         "search": ["季陶樓", "歷史學系", "台灣史研究所", "英國語文學系", "日本語文學系", "語言學研究所"],
         "ID": 27,
-        "buildingid":["34"]
+        "buildingid":["34"],
+        "description":"季陶樓是依民國十六年政大創校時的教務主任戴傳賢，字季陶而命名，主要為英國語文學系及日本語文學系所用。"
       },
       "geometry": {
         "type": "Polygon",
@@ -742,7 +761,8 @@
         "centerlat": 24.980986,
         "search": ["國際大樓", "華語文教學碩/博士學位學程", "外文中心", "華語文教學中心"],
         "ID": 28,
-        "buildingid":["36"]
+        "buildingid":["36"],
+        "description":"政大外文中心所在地，提供語言學習相關之軟硬體設備，供全校教職員生使用。"
       },
       "geometry": {
         "type": "Polygon",
@@ -769,7 +789,8 @@
         "centerlat": 24.986842,
         "search": ["莊敬一舍", "莊一"],
         "ID": 29,
-        "buildingid":["61"]
+        "buildingid":["61"],
+        "description":"位於政大山下校區的最新女生宿舍。"
       },
       "geometry": {
         "type": "Polygon",
@@ -796,7 +817,8 @@
         "centerlat": 24.987126,
         "search": ["莊敬二舍", "莊二"],
         "ID": 30,
-        "buildingid":["62"]
+        "buildingid":["62"],
+        "description":"位於政大山下校區的最新男生宿舍。"
       },
       "geometry": {
         "type": "Polygon",
@@ -823,7 +845,8 @@
         "centerlat": 24.987050,
         "search": ["莊敬三舍", "莊三"],
         "ID": 31,
-        "buildingid":["63"]
+        "buildingid":["63"],
+        "description":"位於政大山下校區的最新男生宿舍。"
       },
       "geometry": {
         "type": "Polygon",
@@ -850,7 +873,8 @@
         "centerlat": 24.988272,
         "search": ["莊敬外舍", "莊外"],
         "ID": 32,
-        "buildingid":["64","65","66"]
+        "buildingid":["64","65","66"],
+        "description":"位於政大校園外的男生宿舍。"
       },
       "geometry": {
         "type": "Polygon",
@@ -877,7 +901,8 @@
         "centerlat": 24.986555,
         "search": ["莊敬九舍", "莊九"],
         "ID": 33,
-        "buildingid":["67"]
+        "buildingid":["67"],
+        "description":"位於政大山下校區的高樓層住宿大樓，為女生宿舍，內有電梯。"
       },
       "geometry": {
         "type": "Polygon",
@@ -904,7 +929,8 @@
         "centerlat": 24.987550,
         "search": ["玫苑"],
         "ID": 34,
-        "buildingid":["83"]
+        "buildingid":["83"],
+        "description":"為教職員宿舍。"
       },
       "geometry": {
         "type": "Polygon",
@@ -931,7 +957,8 @@
         "centerlat": 24.978813,
         "search": ["自強一舍", "自強二舍", "自強三舍"],
         "ID": 35,
-        "buildingid":["70"]
+        "buildingid":["70"],
+        "description":"位於政大半山腰的男研究生宿舍。"
       },
       "geometry": {
         "type": "Polygon",
@@ -958,7 +985,8 @@
         "centerlat": 24.979403,
         "search": ["自強五舍", "自強六舍", "自強七舍", "自強八舍"],
         "ID": 36,
-        "buildingid":["68","69"]
+        "buildingid":["68","69"],
+        "description":"位於政大山上校區的男生宿舍與女生宿舍。"
       },
       "geometry": {
         "type": "Polygon",
@@ -988,7 +1016,8 @@
         "centerlat": 24.980224,
         "search": ["自強九舍"],
         "ID": 37,
-        "buildingid":["71"]
+        "buildingid":["71"],
+        "description":"位於政大山上校區安九食堂樓上的女生宿舍。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1021,7 +1050,8 @@
         "centerlat": 24.980052,
         "search": ["自強十舍"],
         "ID": 38,
-        "buildingid":["A1", "A2" ,"A3", "A4"]
+        "buildingid":["A1", "A2" ,"A3", "A4"],
+        "description":"位於山上校區的宿舍，主要提供研究生住宿。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1074,12 +1104,13 @@
         "fill-opacity": 0.2,
         "department": "Services",
         "buildingen": "Alumni Center",
-        "buildingzh": "校友服務中心",
+        "buildingzh": "第八教室",
         "centerlng": 121.575711,
         "centerlat": 24.987445,
         "search": ["校友服務中心"],
         "ID": 40,
-        "buildingid" : ["09"]
+        "buildingid" : ["09"],
+        "description":"1樓為校友服務中心，可於此購買各式政治大學紀念品，2樓為心智、大腦與學習研究中心。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1134,7 +1165,8 @@
         "centerlat": 24.986187,
         "search": ["四維堂"],
         "ID": 42,
-        "buildingid":["11"]
+        "buildingid":["11"],
+        "description":"走進政大校門所見的第一棟建築，是政大的精神象徵，有上下兩層，兼具體育館、禮堂及學生課外活動多重用途。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1161,7 +1193,8 @@
         "centerlat": 24.987384,
         "search": ["樂活館"],
         "ID": 43,
-        "buildingid":["12"]
+        "buildingid":["12"],
+        "description":"政大第一個由學生社團自治管理與使用的空間，提供各式開放及非開放式的討論及倉儲空間，讓社團同學開會討論、籌備活動之用。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1188,7 +1221,8 @@
         "centerlat": 24.987484,
         "search": ["樂活小舖"],
         "ID": 44,
-        "buildingid":["13"]
+        "buildingid":["13"],
+        "description":"靠近側門，一二樓包含許多商家，包含：男女剪燙、理髮部，早餐店、體育用品刻印、鐘錶眼鏡、洗衣部等。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1215,7 +1249,8 @@
         "centerlat": 24.987300,
         "search": ["集英樓", "福利社"],
         "ID": 45,
-        "buildingid":["17"]
+        "buildingid":["17"],
+        "description":"大樓1樓為政大員生消費合作社，販售生活用品及各項文具等。2樓為政大巨流書城，提供訂書服務。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1242,7 +1277,8 @@
         "centerlat": 24.984963,
         "search": ["體育館"],
         "ID": 46,
-        "buildingid":["24"]
+        "buildingid":["24"],
+        "description":"1樓大廳可做羽球、籃球及排球等運動，兩側則有桌球室、舞蹈教室等，B1有重訓室，2樓則為視聽教室。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1275,7 +1311,8 @@
         "centerlat": 24.985314,
         "search": ["游泳館", "重訓室"],
         "ID": 47,
-        "buildingid":["23"]
+        "buildingid":["23"],
+        "description":"本館1樓為游泳池，2樓則有重訓室及飛輪教室。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1302,7 +1339,8 @@
         "centerlat": 24.982270,
         "search": ["環山網球場"],
         "ID": 48,
-        "buildingid":["97"]
+        "buildingid":["97"],
+        "description":"位於政大後山，靠近北政國中上方的網球場。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1329,7 +1367,8 @@
         "centerlat": 24.981150,
         "search": ["六期運動場", "六期"],
         "ID": 49,
-        "buildingid":["98"]
+        "buildingid":["98"],
+        "description":"環山戶外籃排球場、環山風雨籃排球場皆位於此。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1382,7 +1421,8 @@
         "centerlat": 24.979075,
         "search": ["研究暨創新教育成總中心"],
         "ID": 51,
-        "buildingid":["35"]
+        "buildingid":["35"],
+        "description":"目前研創中心共有校級研究中心、數位人文計畫團隊、社會實踐辦公室進駐於各樓層，透過平台互動與研習活動，促成跨領域研究的產生。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1409,7 +1449,8 @@
         "centerlat": 24.989182,
         "search": ["校長之家"],
         "ID": 52,
-        "buildingid":["X01"]
+        "buildingid":["X01"],
+        "description":"位於道南新村巷弄內的校長之家曾是政大歷任校長的職務宿舍，現在已改造成心理諮商中心。"
       },
       "geometry": {
         "type": "Polygon",
@@ -1436,13 +1477,41 @@
         "centerlat": 24.990168,
         "search": ["國際學人暨學生會館"],
         "ID": 53,
-        "buildingid":["72"]
+        "buildingid":["72"],
+        "description":"又名I-House，位於秀明路二段，鄰近政大校區，供外籍學生、本籍學生、學生家長、校友、教職員住宿。"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [121.575028, 24.990168], [121.575217, 24.990269], [121.575232, 24.990248], [121.575246, 24.990254], [121.575237, 24.990268], [121.575288, 24.990294], [121.575301, 24.990279], [121.575370,24.990316], [121.575415,24.990248], [121.575365,24.990221], [121.575380,24.990198], [121.575355,24.990186], [121.575346,24.990198], [121.575320,24.990184], [121.575315,24.990190], [121.575281,24.990172], [121.575088,24.990074], [121.575028,24.990168]
+          ]
+        ]
+      }
+    },{
+      "type": "Feature",
+      "properties": {
+        "isColorful": "true",
+        "stroke-color": "#1976D2",
+        "stroke-weight": 1,
+        "stroke-opacity": 1,
+        "fill-color": "#2196F3",
+        "fill-opacity": 0.2,
+        "department": "Sports",
+        "buildingen": "Si Wei Tennis Court",
+        "buildingzh": "四維網球場",
+        "centerlng": 121.575028,
+        "centerlat": 24.990168,
+        "search": ["四維網球場"],
+        "ID": 55,
+        "buildingid":["96"],
+        "description":"位於山下校區，開放本校教職員工及學生使用。"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [121.575422, 24.985591], [121.575765, 24.985523], [121.575713, 24.985278], [121.575374, 24.985057], [121.575299, 24.985073], [121.575422, 24.985591]
           ]
         ]
       }
@@ -1463,7 +1532,8 @@
         "centerlat": 24.989927,
         "search": ["第二學人宿舍"],
         "ID": 54,
-        "buildingid":["93"]
+        "buildingid":["93"],
+        "description":"供外籍學生、本籍學生、學生家長、校友、教職員住宿。"
       },
       "geometry": {
         "type": "Polygon",
