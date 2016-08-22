@@ -86,6 +86,7 @@ body {
     }
     .navbar-custom {
       color: #0097A7;
+      border-radius:0px !important ;
       background: #0097A7;
       font-family: "Lucida Grande", "Arial", sans-serif;
       font-size: 14px;
