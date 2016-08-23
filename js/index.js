@@ -503,6 +503,7 @@ var menuOpen=false;
     }
     
     var main = function() {
+      initMap();
        setTimeout(function(){
         $('.menu').css('left',$('.menu').width()*-1+"px" );
       readblid();
