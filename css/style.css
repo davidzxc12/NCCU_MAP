@@ -119,16 +119,16 @@ body {
       padding-top: 10%
     }
     ::-webkit-input-placeholder { /* Chrome */
-  color:  #6C6C6C;
+  color:  #ADADAD;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color:  #6C6C6C;
+  color:  #ADADAD;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color:  #6C6C6C;
+  color:  #ADADAD;
   opacity: 1;
 }
 :-moz-placeholder { /* Firefox 4 - 18 */
-  color:  #6C6C6C;
+  color:  #ADADAD;
   opacity: 1;
 }
