@@ -25,9 +25,7 @@ body {
       margin: 10px 0px 15px 0px;
     }
 
-    .title-custom{
-      pointer-events: none!important;
-    }
+
     .radio-custom {
     }
     .radio-custom label {
