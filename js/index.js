@@ -25,7 +25,18 @@ var menuOpen=false;
       map = new google.maps.Map(document.getElementById('map'), {
         zoom: 17,
         center: myLatLng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        styles:[
+        {
+          featureType:"poi",
+          elementType:"labels",
+          stylers:[{ visibility:"off"}]
+        },{
+          featureType:"landscape",
+          elementType:"labels",
+          stylers:[{ visibility:"off"}]
+        }
+        ]
       });
       map.data.loadGeoJson('map.json');
       // [START snippet]
@@ -89,7 +100,12 @@ var menuOpen=false;
         labelContent: "您目前所選建築",
         labelAnchor: new google.maps.Point(45, 0),
         // labelClass: "labels", // the CSS class for the label
-        icon: "https://maps.google.com/mapfiles/kml/paddle/blu-circle.png"
+        icon: {
+              url: "img/red-circle.png",
+              size: new google.maps.Size(32, 32),
+              origin: new google.maps.Point(0, 0),
+              anchor: new google.maps.Point(0, 32)
+  }
         // https://google-maps-utility-library-v3.googlecode.com/svn/tags/markerclusterer/1.0.2/
       });
 
@@ -234,8 +250,9 @@ var menuOpen=false;
     
     function setCurrentPosition(pos){
       var image={
-        url:"img/red-circle.png",
+        url:"img/blue-circle.png",
         size: new google.maps.Size(32,32),
+        origin: new google.maps.Point(0,0),
         anchor: new google.maps.Point(0,32)
       }
       currentPositionMarker=new google.maps.Marker({
@@ -426,6 +443,7 @@ var menuOpen=false;
               opacity=0.6;
               fopacity=0;}
           }
+
           if($('#checkbox-Attractions').is(':checked')){
             if(feature.getProperty('department')=='Attractions'){
               opacity=0.6;
@@ -539,6 +557,41 @@ var menuOpen=false;
           clearParkings();
         }
       });
+
+      $('#checkbox-Food').click(function(){
+        if($('#checkbox-Food').is(':checked')){
+          map.setOptions({styles:[{
+          featureType:"poi",
+          elementType:"labels",
+          stylers:[{ visibility:"off"}]
+        }
+        ,{
+          featureType:"poi.business",
+          elementType:"labels",
+          stylers:[{ visibility:"on"}]
+        },{
+          featureType:"landscape",
+          elementType:"labels",
+          stylers:[{ visibility:"off"}]
+        }]})
+        }
+      else{
+        map.setOptions({styles:[{
+          featureType:"poi",
+          elementType:"labels",
+          stylers:[{ visibility:"off"}]
+        }
+        ,{
+          featureType:"poi.business",
+          elementType:"labels",
+          stylers:[{ visibility:"off"}]
+        },{
+          featureType:"landscape",
+          elementType:"labels",
+          stylers:[{ visibility:"off"}]
+        }]})
+      }
+    })
     
       $("#campus-srchbtn").click(function (event) {
         var flag = false;
