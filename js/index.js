@@ -13,6 +13,28 @@ var menuOpen=false;
       maxWidth:130
   });
 
+
+    var mapStyle = [
+     {
+          featureType:"poi",
+          elementType:"labels",
+          stylers:[{ visibility:"off"}]
+        }
+        ,{
+          featureType:"poi.business",
+          elementType:"labels",
+          stylers:[{ visibility:"on"}]
+        },{
+          featureType:"landscape",
+          elementType:"labels",
+          stylers:[{ visibility:"off"}]
+        },{
+          featureType:"road",
+          elementType:"labels",
+          stylers:[{visibility:"on"}]
+        }
+        ]
+
     USGSOverlay.prototype = new google.maps.OverlayView();
 
     var buildmap = []
@@ -25,6 +47,9 @@ var menuOpen=false;
       map = new google.maps.Map(document.getElementById('map'), {
         zoom: 17,
         center: myLatLng,
+        panControl: false,
+        streetViewControl: false,
+        zoomControl:false,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         styles:[
         {
@@ -155,6 +180,18 @@ var menuOpen=false;
         autocenter=false;
       });
       
+      var getLocationControl = document.getElementById('getLocationControl');
+      getLocationControl.addEventListener('click', function(){
+        $('#getLocation').trigger('click')
+      })
+      getLocationControl.index=1;
+       var getNCCUControl = document.getElementById('getNCCUControl');
+      getNCCUControl.addEventListener('click', function(){
+        $('#getNCCU').trigger('click')
+      })
+      getNCCUControl.index=1; 
+      map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(getLocationControl);
+      map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(getNCCUControl);
       
       // [END snippet]
       // google.maps.event.addListener(marker , "mouseover" , function(){
@@ -523,6 +560,7 @@ var menuOpen=false;
     var main = function() {
       initMap();
        setTimeout(function(){
+        $('#map').height($(window).height()-$('.navbar-custom').height())
         $('.menu').css('left',$('.menu').width()*-1+"px" );
       readblid();
       },0);
@@ -558,40 +596,51 @@ var menuOpen=false;
         }
       });
 
+
       $('#checkbox-Food').click(function(){
+        var index = mapStyle.findIndex(x => x.featureType=='poi.business')
         if($('#checkbox-Food').is(':checked')){
-          map.setOptions({styles:[{
-          featureType:"poi",
-          elementType:"labels",
-          stylers:[{ visibility:"off"}]
-        }
-        ,{
+         var newStyle = {
           featureType:"poi.business",
           elementType:"labels",
           stylers:[{ visibility:"on"}]
-        },{
-          featureType:"landscape",
-          elementType:"labels",
-          stylers:[{ visibility:"off"}]
-        }]})
+        }
+        mapStyle.splice(index,1,newStyle);
+        map.setOptions({styles:mapStyle});
         }
       else{
-        map.setOptions({styles:[{
-          featureType:"poi",
-          elementType:"labels",
-          stylers:[{ visibility:"off"}]
-        }
-        ,{
+        var newStyle = {
           featureType:"poi.business",
           elementType:"labels",
           stylers:[{ visibility:"off"}]
-        },{
-          featureType:"landscape",
-          elementType:"labels",
-          stylers:[{ visibility:"off"}]
-        }]})
+        }
+        mapStyle.splice(index,1,newStyle);
+        map.setOptions({styles:mapStyle});
       }
     })
+
+
+      $('#checkbox-Road').click(function(){
+        var index = mapStyle.findIndex(x => x.featureType=='road');
+        if($('#checkbox-Road').is(':checked')){
+          var newStyle = {
+          featureType:"road",
+          elementType:"labels",
+          stylers:[{ visibility:"on"}]
+        }
+          mapStyle.splice(index,1,newStyle);
+          map.setOptions({styles:mapStyle});
+        }
+      else{
+        var newStyle = {
+          featureType:"road",
+          elementType:"labels",
+          stylers:[{ visibility:"off"}]
+        }
+          mapStyle.splice(index,1,newStyle);
+          map.setOptions({styles:mapStyle});}
+      }
+    )
     
       $("#campus-srchbtn").click(function (event) {
         var flag = false;
@@ -623,8 +672,7 @@ var menuOpen=false;
       });
 
       $(window).resize(function(){
-        
-       
+        $('#map').height($(window).height()-$('.navbar-custom').height())
         if(!menuOpen){
           $('.menu').css('left',$('.menu').width()*-1+"px" );
         }

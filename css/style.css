@@ -59,6 +59,14 @@ body {
       padding-bottom: 10px;
       padding-left: 20px;
     }
+    .google-feature-label h5{
+      font-size: 19px !important;
+      font-weight: 600 !important;
+
+    }
+    .control_out{
+      padding:15px;
+    }
    
     .icon-close {
       color: #ffffff;
