@@ -570,6 +570,7 @@ var menuOpen=false;
       $("#getLocation").click(function(){
         if(currentPositionMarker!=undefined){
         map.panTo(currentPositionMarker.getPosition());
+        console.log('pan to current position')
         map.setZoom(18);
         autocenter=true;}
         else{
@@ -581,6 +582,7 @@ var menuOpen=false;
       $('#getNCCU').click(function(){
         map.panTo({lat: 24.986589, lng:121.575820});
         map.setZoom(18);
+        autocenter=false;
        $('.icon-close').trigger("click");
       })
       
