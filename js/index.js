@@ -598,7 +598,8 @@ var menuOpen=false;
 
 
       $('#checkbox-Food').click(function(){
-        var index = mapStyle.findIndex(x => x.featureType=='poi.business')
+        var index = mapStyle.map(function(x){return x.featureType}).indexOf("poi.business");
+        //var index = mapStyle.findIndex(x => x.featureType=='poi.business')
         if($('#checkbox-Food').is(':checked')){
          var newStyle = {
           featureType:"poi.business",
@@ -621,7 +622,8 @@ var menuOpen=false;
 
 
       $('#checkbox-Road').click(function(){
-        var index = mapStyle.findIndex(x => x.featureType=='road');
+        var index = mapStyle.map(function(x){return x.featureType}).indexOf("road");
+        //var index = mapStyle.findIndex(x => x.featureType=='road');
         if($('#checkbox-Road').is(':checked')){
           var newStyle = {
           featureType:"road",
