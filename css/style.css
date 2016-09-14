@@ -9,6 +9,7 @@ body {
       background: #ffffff;
       /* #D1E0E8 background: #afdefa url('https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;*/
       height: 100%;
+      top:0px;
       min-width: 230px;
   /* start off behind the scenes */
       position: absolute;

@@ -8,6 +8,7 @@ var menuOpen=false;
     var labels=[];
     var fontsize = 20;
     var overlay;
+    var doorLabels = [];
     var currentPositionMarker;
     var infowindow=new google.maps.InfoWindow({
       maxWidth:130
@@ -72,20 +73,25 @@ var menuOpen=false;
         switch(map.getZoom()){
           case 21:
             fontsize=70;
+            changeLabelFontSize(doorLabels,fontsize-10);
             break;
           case 20:
             fontsize=60;
+            changeLabelFontSize(doorLabels,fontsize-10);
             break;
           case 19:
             fontsize=40;
+            changeLabelFontSize(doorLabels,fontsize-10);
             break;
           case 18:
             fontsize=30;
+            changeLabelFontSize(doorLabels,fontsize-10);
             break;
           case 17:
           case 16:
           case 15:
             fontsize=20;
+            changeLabelFontSize(doorLabels,fontsize-10);
             break;
         }
       }); 
@@ -224,6 +230,7 @@ var menuOpen=false;
             buildmap.push(ct);
             
             var mapLabel = new MapLabel({
+              fontFamily:"Microsoft JhengHei",
               text: json.features[i].properties.buildingzh,
               position: new google.maps.LatLng(ct_lat,ct_lng),
               map: map,
@@ -234,7 +241,60 @@ var menuOpen=false;
             labels.push(mapLabel);
         }
     });
+
+      doorLabels.push(new MapLabel({
+              fontFamily:"Microsoft JhengHei",
+              text: "政大正門",
+              position: new google.maps.LatLng(24.987598,121.576050),
+              map: map,
+              fontSize: fontsize-10,
+              align: 'center',
+              minZoom:16,
+              strokeWeight:2,
+              fontColor:"#696e6d"
+            }));
+      doorLabels.push(new MapLabel({
+              fontFamily:"Microsoft JhengHei",
+              text: "政大側門(外舍)",
+              position: new google.maps.LatLng(24.987358,121.577226),
+              map: map,
+              fontSize: fontsize-10,
+              align: 'center',
+              minZoom:16,
+              strokeWeight:4,
+              fontColor:"#696e6d"
+            }));
+      doorLabels.push(new MapLabel({
+              fontFamily:"Microsoft JhengHei",
+              text: "政大側門(麥測)",
+              position: new google.maps.LatLng(24.987824,121.574885),
+              map: map,
+              fontSize: fontsize-10,
+              align: 'center',
+              minZoom:16,
+              strokeWeight:4,
+              fontColor:"#696e6d"
+            }));
+      doorLabels.push(new MapLabel({
+              fontFamily:"Microsoft JhengHei",
+              text: "政大後門",
+              position: new google.maps.LatLng(24.979698,121.567940),
+              map: map,
+              fontSize: fontsize-10,
+              align: 'center',
+              minZoom:16,
+              strokeWeight:4,
+              fontColor:"#696e6d"
+            }));
+
+
       
+    }
+
+    function changeLabelFontSize(labels,size){
+      for(var i =0 ; i<labels.length; i++){
+        labels[i].set('fontSize', size);
+      }
     }
 
     function addContent(content){
