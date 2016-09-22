@@ -186,7 +186,7 @@ var menuOpen=false;
         autocenter=false;
       });
       
-      var getLocationControl = document.getElementById('getLocationControl');
+   /*   var getLocationControl = document.getElementById('getLocationControl');
       getLocationControl.addEventListener('click', function(){
         $('#getLocation').trigger('click')
       })
@@ -197,7 +197,7 @@ var menuOpen=false;
       })
       getNCCUControl.index=1; 
       map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(getLocationControl);
-      map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(getNCCUControl);
+      map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(getNCCUControl); */
       
       // [END snippet]
       // google.maps.event.addListener(marker , "mouseover" , function(){
