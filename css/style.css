@@ -39,8 +39,9 @@ body {
     }
     /* Basic styling */
     .row{
-      height: 100%;
       width:100%;
+      padding: 0px !important;
+
     }
 
     #pac-input{
