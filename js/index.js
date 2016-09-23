@@ -155,11 +155,22 @@ var menuOpen=false;
         infowindow.setPosition(new google.maps.LatLng(event.feature.getProperty('centerlat'),event.feature.getProperty('centerlng')));
         infoContent(event.feature.getProperty('ID'));
         infowindow.open(map);
+        for(var i=0;i<labels.length;i++){
+          if(labels[i].text==event.feature.getProperty('buildingzh')){
+            labels[i].set('fontSize', fontsize);
+            labels[i].setMap(map);
+          }
+          else{
+            labels[i].setMap(null);
+          }
+        }
       });
       // When the user hovers, tempt them to click by outlining the letters.
       // Call revertStyle() to remove all overrides. This will use the style rules
       // defined in the function passed to setStyle()
-      map.data.addListener('mouseover', function(event) {
+
+
+   /*   map.data.addListener('mouseover', function(event) {
         map.data.revertStyle();
         map.data.overrideStyle(event.feature, {strokeWeight: 3});
         map.data.overrideStyle(event.feature, {fillColor: "#FF0000"});
@@ -170,7 +181,7 @@ var menuOpen=false;
             break;
           }
         }
-      });
+      }); 
 
       map.data.addListener('mouseout', function(event) {
         map.data.revertStyle();
@@ -180,7 +191,7 @@ var menuOpen=false;
             break;
           }
         }
-      });
+      });  */
       
       map.addListener('drag',function(){
         autocenter=false;
