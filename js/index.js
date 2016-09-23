@@ -621,7 +621,7 @@ var menuOpen=false;
       initMap();
        setTimeout(function(){
         $('#map').height($(window).height()-$('.navbar-custom').height())
-        $('.row').height($(window).height()-$('.navbar-custom').height())
+        $('.total-row').height($(window).height()-$('.navbar-custom').height())
         $('.menu').css('left',$('.menu').width()*-1+"px" );
       readblid();
       },0);
